@@ -1,11 +1,13 @@
-
 import './App.css';
-import { TodoWrapper } from './components/TodoWrapper';
+import { BoardWrapper } from './components/Board/BoardWrapper';
 
 function App() {
   return (
     <div className="App">
-      <TodoWrapper  />
+      <nav></nav>
+      <h1 className="navbar-app">App bar</h1>
+      <h1 className="navbar-board">Board bar</h1>
+      <BoardWrapper />
     </div>
   );
 }

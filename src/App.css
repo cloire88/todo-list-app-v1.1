@@ -24,11 +24,62 @@ h1 {
   font-size: 1.75rem;
 }
 
+.BoardWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.board-list {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal alignment */
+  gap: 20px;
+}
+
+.board {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+.add-board-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-board-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-board-btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.delete-board-btn:hover {
+  background-color: #a71d2a;
+}
+
 .TodoWrapper {
   background: #27AEB9;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .TodoForm {
@@ -89,4 +140,3 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
- 

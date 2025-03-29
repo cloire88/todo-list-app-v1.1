@@ -40,6 +40,14 @@ export const TodoWrapper = () => {
     );
   };
 
+  if (todos.length === 0) {
+    return (
+      <div className="TodoWrapper">
+        <TodoForm addTodo={addTodo} />
+      </div>
+    );
+  }
+
   return (
     <div className="TodoWrapper">
       <h1>List Your Things !</h1>
